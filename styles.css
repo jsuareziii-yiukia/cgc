@@ -140,6 +140,12 @@ header {
     margin-bottom: 20px;
 }
 
+.pulp-fiction-banner .banner-logo,
+.cactus-canyon-banner .banner-logo {
+    max-width: 50%; /* Ensures the Cactus Canyon logo is as large as the Pulp Fiction logo */
+    height: auto;
+}
+
 .banner-title {
     font-size: 48px;
     margin-bottom: 10px;
