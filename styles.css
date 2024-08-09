@@ -122,32 +122,22 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stack items vertically */
     text-align: center;
     color: #fff;
     padding: 50px 20px;
     position: relative;
     border-radius: 10px;
     height: 100vh; /* Ensure the banners fill the viewport height */
-    background-size: cover;
-    background-position: center;
-}
-
-.pulp-fiction-banner {
-    background: url('images/pulp-fiction-banner-bg.jpg') no-repeat center center;
-    background-size: cover;
-    background-color: #000;
-}
-
-.cactus-canyon-banner {
-    background: url('images/banner.webp') no-repeat center center;
-    background-size: cover;
-    background-color: #5e3e19;
 }
 
 .banner-content {
     z-index: 1;
-    max-width: 80%; /* Optional: limit the content width to ensure readability */
+}
+
+.banner-logo {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .banner-title {
@@ -161,48 +151,27 @@ header {
     margin-bottom: 20px;
 }
 
-.btn-watch-trailer {
-    display: inline-block;
-    padding: 15px 30px;
-    background: #f4b400;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 30px;
-    text-decoration: none;
-    animation: pulse 2s infinite;
-    transition: background-color 0.3s ease;
+.video-wrapper {
+    margin-top: 20px;
 }
 
-.btn-watch-trailer:hover {
-    background-color: #e69500;
+/* Specific Banner Styling */
+.pulp-fiction-banner {
+    background: url('images/pulp-fiction-banner-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-color: #000;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(244, 180, 0, 0.7);
-    }
-    70% {
-        transform: scale(1.05);
-        box-shadow: 0 0 15px rgba(244, 180, 0, 0.7);
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(244, 180, 0, 0);
-    }
+.cactus-canyon-banner {
+    background: url('images/cactus-canyon-banner-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-color: #5e3e19;
 }
 
-/* About */
-.about {
-    padding: 70px 20px;
-    background-color: #1e1e1e;
-    text-align: center;
-}
-
-.about h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #f4b400;
+.john-wick-banner {
+    background: url('images/john-wick-banner-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-color: #2c2c2c;
 }
 
 /* Footer */
