@@ -117,6 +117,58 @@ header {
     background: linear-gradient(45deg, #e69500, #f4b400);
 }
 
+/* Game Banners */
+.game-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 50px 20px;
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.banner-content {
+    z-index: 1;
+}
+
+.banner-logo {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.banner-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.banner-description {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.video-wrapper {
+    margin-top: 20px;
+}
+
+/* Pulp Fiction Banner */
+.pulp-fiction-banner {
+    background: url('images/pulp-fiction-banner-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-color: #000;
+}
+
+/* Cactus Canyon Banner */
+.cactus-canyon-banner {
+    background: url('images/cactus-canyon-banner-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-color: #5e3e19;
+}
+
 /* Featured Games */
 .featured-games {
     padding: 70px 20px;
