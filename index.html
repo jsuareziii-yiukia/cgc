@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chicago Gaming Company</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS for Carousel -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,62 +30,63 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Explore Our Games</h1>
-            <a href="#games" class="btn-primary">See More</a>
-        </div>
-    </section>
+    <!-- Carousel Section -->
+    <div id="gameCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
 
-    <!-- Pulp Fiction Banner -->
-    <section class="game-banner pulp-fiction-banner">
-        <div class="banner-content">
-            <img src="images/pulp-fiction.png" alt="Pulp Fiction" class="banner-logo">
-            <h2 class="banner-title">Pulp Fiction</h2>
-            <p class="banner-description">An iconic game with a classic theme.</p>
-            <div class="video-wrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/vzTXdlY14Lw" title="Pulp Fiction Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- Pulp Fiction Slide -->
+            <div class="carousel-item active">
+                <section class="game-banner pulp-fiction-banner">
+                    <div class="banner-content">
+                        <img src="images/pulp-fiction.png" alt="Pulp Fiction" class="banner-logo">
+                        <h2 class="banner-title">Pulp Fiction</h2>
+                        <p class="banner-description">An iconic game with a classic theme.</p>
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vzTXdlY14Lw" title="Pulp Fiction Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </div>
-    </section>
 
-    <!-- Cactus Canyon Banner -->
-    <section class="game-banner cactus-canyon-banner">
-        <div class="banner-content">
-            <img src="images/cactus-canyon.png" alt="Cactus Canyon" class="banner-logo">
-            <h2 class="banner-title">Cactus Canyon</h2>
-            <p class="banner-description">A wild west adventure.</p>
-            <div class="video-wrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/_cOUc3B8R_s" title="Cactus Canyon Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- Cactus Canyon Slide -->
+            <div class="carousel-item">
+                <section class="game-banner cactus-canyon-banner">
+                    <div class="banner-content">
+                        <img src="images/cactus-canyon.png" alt="Cactus Canyon" class="banner-logo">
+                        <h2 class="banner-title">Cactus Canyon</h2>
+                        <p class="banner-description">A wild west adventure.</p>
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/_cOUc3B8R_s" title="Cactus Canyon Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </div>
-    </section>
 
-    <!-- Featured Games Section -->
-    <section class="featured-games" id="games">
-        <h2>Featured Games</h2>
-        <div class="games-grid">
-            <div class="game-card">
-                <img src="images/pulp-fiction.png" alt="Pulp Fiction">
-                <h3>Pulp Fiction</h3>
-                <p>An iconic game with a classic theme.</p>
-                <a href="https://www.facebook.com/chicagogamingcompany/" class="btn-secondary">Learn More</a>
+            <!-- John Wick Slide -->
+            <div class="carousel-item">
+                <section class="game-banner john-wick-banner">
+                    <div class="banner-content">
+                        <h2 class="banner-title">John Wick</h2>
+                        <p class="banner-description">An action-packed pinball game.</p>
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/YourJohnWickTrailerURL" title="John Wick Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div class="game-card">
-                <img src="images/cactus-canyon.png" alt="Cactus Canyon">
-                <h3>Cactus Canyon</h3>
-                <p>A wild west adventure.</p>
-                <a href="https://www.facebook.com/chicagogamingcompany/" class="btn-secondary">Learn More</a>
-            </div>
-            <div class="game-card">
-                <img src="images/class-of-1981.png" alt="Class of 1981">
-                <h3>Class of 1981</h3>
-                <p>Retro gaming at its finest.</p>
-                <a href="https://www.facebook.com/chicagogamingcompany/" class="btn-secondary">Learn More</a>
-            </div>
+
         </div>
-    </section>
+
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#gameCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#gameCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
     <!-- About Section -->
     <section class="about" id="about">
@@ -113,6 +116,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
