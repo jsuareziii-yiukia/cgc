@@ -133,14 +133,21 @@ header {
     background-position: center;
 }
 
-.banner-content {
-    z-index: 1;
+.pulp-fiction-banner {
+    background: url('images/pulp-fiction-banner-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-color: #000;
 }
 
-.banner-logo {
-    height: 200px; /* Fixed height for consistency */
-    width: auto;
-    margin-bottom: 20px;
+.cactus-canyon-banner {
+    background: url('images/banner.webp') no-repeat center center;
+    background-size: cover;
+    background-color: #5e3e19;
+}
+
+.banner-content {
+    z-index: 1;
+    max-width: 80%; /* Optional: limit the content width to ensure readability */
 }
 
 .banner-title {
@@ -183,19 +190,6 @@ header {
         transform: scale(1);
         box-shadow: 0 0 0 0 rgba(244, 180, 0, 0);
     }
-}
-
-/* Specific Banner Styling */
-.pulp-fiction-banner {
-    background: url('images/pulp-fiction-banner-bg.jpg') no-repeat center center;
-    background-size: cover;
-    background-color: #000;
-}
-
-.cactus-canyon-banner {
-    background: url('images/cactus-canyon-banner-bg.jpg') no-repeat center center;
-    background-size: cover;
-    background-color: #5e3e19;
 }
 
 /* About */
