@@ -150,7 +150,8 @@ header {
     padding: 50px 20px;
     position: relative;
     min-height: 500px; /* Adjusted height to match Cactus Canyon banner */
-    height: auto;
+    height: 500px;
+    margin-top: 60px; /* Adjusted margin to compensate for the fixed header */
     background-size: cover; /* Ensure full coverage of the background */
     border-radius: 10px;
 }
