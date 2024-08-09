@@ -134,8 +134,9 @@ header {
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    width: 30%;
     transition: transform 0.3s, box-shadow 0.3s;
+    width: 30%;
+    text-align: center;
 }
 
 .game-card:hover {
