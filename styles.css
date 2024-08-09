@@ -141,6 +141,10 @@ header {
 }
 
 /* Game Banners */
+.carousel-inner {
+    height: 100vh;
+}
+
 .game-banner {
     display: flex;
     justify-content: center;
@@ -160,7 +164,10 @@ header {
 
 .banner-content {
     z-index: 1;
-    padding: 10px; /* Add some padding for better readability on mobile */
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    text-align: left;
 }
 
 .banner-logo {
@@ -178,6 +185,12 @@ header {
 .banner-description {
     font-size: 24px;
     margin-bottom: 20px;
+}
+
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Specific Banner Styling */
