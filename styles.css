@@ -122,12 +122,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Stack items vertically */
     text-align: center;
     color: #fff;
     padding: 50px 20px;
     position: relative;
     border-radius: 10px;
     height: 100vh; /* Ensure the banners fill the viewport height */
+    background-size: cover;
+    background-position: center;
 }
 
 .banner-content {
@@ -135,16 +138,9 @@ header {
 }
 
 .banner-logo {
-    max-width: 60%;
-    height: auto;
+    height: 200px; /* Fixed height for consistency */
+    width: auto;
     margin-bottom: 20px;
-    object-fit: contain; /* Ensures that the logo maintains its aspect ratio and doesn't distort */
-}
-
-.pulp-fiction-banner .banner-logo,
-.cactus-canyon-banner .banner-logo {
-    max-width: 50%; /* Ensures the logos are the same size */
-    height: auto;
 }
 
 .banner-title {
