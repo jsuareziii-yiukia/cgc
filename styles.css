@@ -123,6 +123,23 @@ header {
     background: linear-gradient(45deg, #e69500, #f4b400);
 }
 
+/* Pulsing Button Effect */
+.pulse-btn {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 /* Game Banners */
 .game-banner {
     display: flex;
@@ -132,8 +149,10 @@ header {
     color: #fff;
     padding: 50px 20px;
     position: relative;
+    min-height: 500px; /* Adjusted height to match Cactus Canyon banner */
+    height: auto;
+    background-size: cover; /* Ensure full coverage of the background */
     border-radius: 10px;
-    min-height: 100vh; /* Ensure the banners fill the viewport height */
 }
 
 .banner-content {
