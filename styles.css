@@ -77,7 +77,7 @@ header {
 .hero {
     height: 100vh;
     background: url('images/336387012_615910347053620_48062809155411420_n.jpg') no-repeat center center;
-    background-size: contain; /* Ensure the entire image is visible */
+    background-size: cover; /* Ensure the image covers the entire area */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,10 +151,9 @@ header {
     position: relative;
     min-height: 500px; /* Ensure consistent height */
     margin-top: 60px; /* Adjusted margin to compensate for the fixed header */
-    background-size: contain; /* Fit the entire image within the container */
+    background-size: cover; /* Fill the container while preserving aspect ratio */
     background-position: center; /* Center the image within the container */
     background-repeat: no-repeat;
-    background-color: transparent; /* Ensure no color filling */
     border-radius: 10px;
     overflow: hidden;
 }
@@ -184,14 +183,12 @@ header {
 /* Specific Banner Styling */
 .pulp-fiction-banner {
     background: url('images/pulp-fiction-banner-bg.jpg') no-repeat center center;
-    background-size: contain;
-    background-color: transparent;
+    background-size: cover;
 }
 
 .cactus-canyon-banner {
     background: url('images/cactus-canyon-banner-bg.jpg') no-repeat center center;
-    background-size: contain; /* Fit the entire image within the container */
-    background-color: transparent; /* Remove any color filling */
+    background-size: cover; /* Ensure full coverage and scaling */
 }
 
 /* Footer */
