@@ -187,7 +187,8 @@ header {
 
 .cactus-canyon-banner {
     background: url('images/cactus-canyon-banner-bg.jpg') no-repeat center center;
-    background-size: cover;
+    background-size: contain; /* Adjusted to ensure the image is fully contained */
+    background-position: center; /* Center the image within the container */
     background-color: #5e3e19;
 }
 
