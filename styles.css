@@ -151,10 +151,10 @@ header {
     position: relative;
     min-height: 500px; /* Ensure consistent height */
     margin-top: 60px; /* Adjusted margin to compensate for the fixed header */
-    background-size: cover; /* Fill the container while preserving aspect ratio */
-    background-position: center center; /* Center the image within the container */
+    background-size: contain; /* Fit the entire image within the container */
+    background-position: center; /* Center the image within the container */
     background-repeat: no-repeat;
-    background-color: #5e3e19; /* Default background color */
+    background-color: transparent; /* Ensure no color filling */
     border-radius: 10px;
     overflow: hidden;
 }
@@ -184,14 +184,14 @@ header {
 /* Specific Banner Styling */
 .pulp-fiction-banner {
     background: url('images/pulp-fiction-banner-bg.jpg') no-repeat center center;
-    background-size: cover;
-    background-color: #000;
+    background-size: contain;
+    background-color: transparent;
 }
 
 .cactus-canyon-banner {
     background: url('images/cactus-canyon-banner-bg.jpg') no-repeat center center;
-    background-size: cover; /* Ensure full coverage and scaling */
-    background-color: #5e3e19;
+    background-size: contain; /* Fit the entire image within the container */
+    background-color: transparent; /* Remove any color filling */
 }
 
 /* Footer */
