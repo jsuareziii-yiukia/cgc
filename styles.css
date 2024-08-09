@@ -143,6 +143,7 @@ header {
 /* Game Banners */
 .carousel-inner {
     height: 100vh;
+    overflow: hidden; /* Ensure no overflow outside the carousel */
 }
 
 .game-banner {
@@ -153,30 +154,29 @@ header {
     color: #fff;
     padding: 50px 20px;
     position: relative;
-    min-height: 500px;
-    margin-top: 60px;
-    background-size: cover;
+    min-height: 100%; /* Ensure banner fills the carousel */
+    background-size: contain; /* Ensure the image scales properly */
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 10px;
     overflow: hidden;
 }
 
 .carousel-item {
     height: 100vh;
-    background-size: cover;
+    background-size: contain; /* Adjust this property to ensure proper fitting */
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Specific Banner Styling */
 .pulp-fiction-banner {
     background: url('images/pulp-fiction.png') no-repeat center center;
-    background-size: cover;
+    background-size: contain; /* Ensure the image fits the banner */
 }
 
 .cactus-canyon-banner {
     background: url('images/cactus-canyon.png') no-repeat center center;
-    background-size: cover;
+    background-size: contain; /* Ensure the image fits the banner */
 }
 
 /* Footer */
