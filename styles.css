@@ -70,7 +70,8 @@ header {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url('images/336387012_615910347053620_48062809155411420_n.jpg') no-repeat center center/cover;
+    background: url('images/336387012_615910347053620_48062809155411420_n.jpg') no-repeat center center;
+    background-size: contain; /* Ensure the entire image is visible */
     display: flex;
     justify-content: center;
     align-items: center;
