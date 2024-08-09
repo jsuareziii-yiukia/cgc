@@ -149,10 +149,11 @@ header {
     color: #fff;
     padding: 50px 20px;
     position: relative;
-    min-height: 500px; /* Adjusted height to match Cactus Canyon banner */
+    min-height: 500px; /* Ensure consistent height */
     height: 500px;
     margin-top: 60px; /* Adjusted margin to compensate for the fixed header */
-    background-size: cover; /* Ensure full coverage of the background */
+    background-size: cover; /* Fill the container while preserving aspect ratio */
+    background-position: center; /* Center the image within the container */
     border-radius: 10px;
 }
 
@@ -187,7 +188,7 @@ header {
 
 .cactus-canyon-banner {
     background: url('images/cactus-canyon-banner-bg.jpg') no-repeat center center;
-    background-size: contain; /* Adjusted to ensure the image is fully contained */
+    background-size: cover; /* Ensure full coverage and scaling */
     background-position: center; /* Center the image within the container */
     background-color: #5e3e19;
 }
