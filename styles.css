@@ -62,9 +62,15 @@ header {
     color: #f4b400;
 }
 
-.social-icons img {
-    width: 24px;
+.social-icons a {
+    color: #ececec;
+    font-size: 18px;
     margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f4b400;
 }
 
 /* Hero Section */
@@ -127,15 +133,16 @@ header {
     padding: 50px 20px;
     position: relative;
     border-radius: 10px;
-    height: 100vh; /* Ensure the banners fill the viewport height */
+    min-height: 100vh; /* Ensure the banners fill the viewport height */
 }
 
 .banner-content {
     z-index: 1;
+    padding: 10px; /* Add some padding for better readability on mobile */
 }
 
 .banner-logo {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
