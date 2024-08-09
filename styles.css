@@ -153,38 +153,13 @@ header {
     color: #fff;
     padding: 50px 20px;
     position: relative;
-    min-height: 500px; /* Ensure consistent height */
-    margin-top: 60px; /* Adjusted margin to compensate for the fixed header */
-    background-size: cover; /* Fill the container while preserving aspect ratio */
-    background-position: center; /* Center the image within the container */
+    min-height: 500px;
+    margin-top: 60px;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
     overflow: hidden;
-}
-
-.banner-content {
-    z-index: 1;
-    position: absolute;
-    bottom: 20%;
-    left: 5%;
-    text-align: left;
-}
-
-.banner-logo {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.banner-title {
-    font-size: 48px;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.banner-description {
-    font-size: 24px;
-    margin-bottom: 20px;
 }
 
 .carousel-item {
@@ -195,13 +170,13 @@ header {
 
 /* Specific Banner Styling */
 .pulp-fiction-banner {
-    background: url('images/pulp-fiction-banner-bg.jpg') no-repeat center center;
+    background: url('images/pulp-fiction.png') no-repeat center center;
     background-size: cover;
 }
 
 .cactus-canyon-banner {
-    background: url('images/cactus-canyon-banner-bg.jpg') no-repeat center center;
-    background-size: cover; /* Ensure full coverage and scaling */
+    background: url('images/cactus-canyon.png') no-repeat center center;
+    background-size: cover;
 }
 
 /* Footer */
