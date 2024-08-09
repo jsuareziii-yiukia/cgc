@@ -21,6 +21,15 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hidden-header {
+    transform: translateY(-100%);
+}
+
+.show-header {
+    transform: translateY(0);
 }
 
 .navbar {
@@ -220,7 +229,7 @@ footer {
 }
 
 .logo-footer img {
-    width: 80px;
+    width: 50px; /* Shrink the circular logo */
     margin-top: 20px;
 }
 
