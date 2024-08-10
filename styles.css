@@ -16,15 +16,15 @@ body {
     height: 50px;
 }
 
-.carousel-item img {
-    max-height: 600px;
-    object-fit: cover;
+#product-showcase .product-item {
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
 }
 
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 5px;
+#product-showcase img {
+    max-height: 300px;
+    border-radius: 10px;
 }
 
 .nav .nav-link {
