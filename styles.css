@@ -16,46 +16,15 @@ body {
     height: 50px;
 }
 
-#games-section h2 {
-    margin-bottom: 30px;
-    font-size: 36px;
-    color: #ffffff;
+.carousel-item img {
+    max-height: 600px;
+    object-fit: cover;
 }
 
-.game-card {
-    background-color: #333;
-    border-radius: 10px;
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    width: 300px;
-    text-align: center;
-}
-
-.game-card h3 {
-    margin: 15px 0;
-    font-size: 24px;
-}
-
-.game-card p {
-    margin-bottom: 15px;
-    font-size: 16px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #f0ad4e;
-    color: #fff;
-    text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #ec971f;
-}
-
-footer .social-media img {
-    width: 30px;
 }
 
 .nav .nav-link {
@@ -64,4 +33,12 @@ footer .social-media img {
 
 .nav .nav-link:hover {
     color: #ec971f;
+}
+
+footer .social-media img {
+    width: 30px;
+}
+
+footer {
+    background-color: #333;
 }
