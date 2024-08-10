@@ -10,54 +10,48 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="main.js" defer></script>
 </head>
 
 <body>
-    <header class="d-flex justify-content-between align-items-center p-3 bg-dark">
-        <img src="images/logo-w-text.png" alt="Chicago Gaming Company Logo" class="logo">
-        <nav>
-            <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link text-light">Home</a></li>
-                <li class="nav-item"><a href="#games-section" class="nav-link text-light">Games</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-light">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-light">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="bg-dark py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <img src="images/logo-w-text.png" alt="Chicago Gaming Company Logo" class="logo">
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Home</a></li>
+                    <li class="nav-item"><a href="#games-section" class="nav-link text-light">Games</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-light">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="games-section" class="my-5">
-        <h2 class="text-center text-light">Featured Games</h2>
         <div id="carouselExample" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="d-flex justify-content-center">
-                        <div class="game-card text-center">
-                            <img src="images/pulp-fiction.png" class="d-block w-100" alt="Pulp Fiction">
-                            <h3>Pulp Fiction</h3>
-                            <p>An iconic game with a classic theme.</p>
-                            <a href="#" class="btn btn-warning">Learn More</a>
-                        </div>
+                    <img src="images/pulp-fiction.png" class="d-block w-100" alt="Pulp Fiction">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Pulp Fiction</h3>
+                        <p>An iconic game with a classic theme.</p>
+                        <a href="#" class="btn btn-warning">Learn More</a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <div class="game-card text-center">
-                            <img src="images/cactus-canyon.png" class="d-block w-100" alt="Cactus Canyon">
-                            <h3>Cactus Canyon</h3>
-                            <p>A wild west adventure.</p>
-                            <a href="#" class="btn btn-warning">Learn More</a>
-                        </div>
+                    <img src="images/cactus-canyon.png" class="d-block w-100" alt="Cactus Canyon">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Cactus Canyon</h3>
+                        <p>A wild west adventure.</p>
+                        <a href="#" class="btn btn-warning">Learn More</a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <div class="game-card text-center">
-                            <img src="images/class-of-1981.png" class="d-block w-100" alt="Class of 1981">
-                            <h3>Class of 1981</h3>
-                            <p>Retro gaming at its finest.</p>
-                            <a href="#" class="btn btn-warning">Learn More</a>
-                        </div>
+                    <img src="images/class-of-1981.png" class="d-block w-100" alt="Class of 1981">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Class of 1981</h3>
+                        <p>Retro gaming at its finest.</p>
+                        <a href="#" class="btn btn-warning">Learn More</a>
                     </div>
                 </div>
             </div>
