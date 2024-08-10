@@ -30,6 +30,31 @@ body {
     align-items: center;
     min-width: 33%;
     overflow: hidden;
+    padding: 20px;
+}
+
+.game-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transform: skewY(-10deg);
+    transform-origin: 0;
+}
+
+.diagonal-bg-red::before {
+    background: #8b0000;
+}
+
+.diagonal-bg-blue::before {
+    background: #0000ff;
+}
+
+.diagonal-bg-orange::before {
+    background: #ff8c00;
 }
 
 .text-content {
@@ -44,6 +69,7 @@ body {
     bottom: 0;
     max-height: 350px;
     width: auto;
+    z-index: 2;
 }
 
 .game-item h2 {
