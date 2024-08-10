@@ -1,27 +1,20 @@
-// JavaScript to hide/show header on scroll
-let lastScrollTop = 0;
-const header = document.querySelector('header');
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('#carouselExample');
+    const inner = carousel.querySelector('.carousel-inner');
+    const items = inner.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
 
-window.addEventListener('scroll', function() {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (scrollTop > lastScrollTop) {
-        // Downscroll - hide header
-        header.classList.add('hidden-header');
-        header.classList.remove('show-header');
-    } else {
-        // Upscroll - show header
-        header.classList.remove('hidden-header');
-        header.classList.add('show-header');
+    function updateCarousel() {
+        inner.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
-    lastScrollTop = scrollTop;
-});
 
-// Smooth scroll for "See More" button
-document.querySelector('.btn-primary').addEventListener('click', function(e) {
-    e.preventDefault();
-    const targetId = this.getAttribute('href');
-    document.querySelector(targetId).scrollIntoView({
-        behavior: 'smooth'
+    document.querySelector('.carousel-control-next').addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % items.length;
+        updateCarousel();
+    });
+
+    document.querySelector('.carousel-control-prev').addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        updateCarousel();
     });
 });
