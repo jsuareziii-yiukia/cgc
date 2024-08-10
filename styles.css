@@ -25,23 +25,25 @@ body {
 
 .game-item {
     flex: 1;
-    padding: 20px;
     position: relative;
     display: flex;
     align-items: center;
+    min-width: 33%;
+    overflow: hidden;
 }
 
 .text-content {
     z-index: 2;
     position: relative;
+    padding-left: 20px;
 }
 
 .pinball-image {
     position: absolute;
-    right: 0;
+    right: 20px;
     bottom: 0;
-    max-height: 300px;
-    transform: translateY(10%);
+    max-height: 350px;
+    width: auto;
 }
 
 .game-item h2 {
