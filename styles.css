@@ -10,7 +10,6 @@ body {
     background-color: #1c1c1c;
     color: #ffffff;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
 .logo {
@@ -20,33 +19,32 @@ body {
 #horizontal-picker {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    justify-content: space-around;
+    padding: 20px 0;
 }
 
 .game-item {
-    min-width: 100vw;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
     border-radius: 15px;
-    scroll-snap-align: start;
+    width: 30%; /* Adjust the width to fit all three items side by side */
 }
 
 .game-item img {
-    max-height: 400px;
-    flex-shrink: 0;
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
 }
 
 .game-item h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .game-item p {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .nav .nav-link {
