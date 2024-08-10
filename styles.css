@@ -20,8 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;  /* Increase padding to add space above and below */
-    margin-top: 50px; /* Adjust margin-top to push the section down */
+    padding: 50px 0;
 }
 
 .game-item {
@@ -32,13 +31,26 @@ body {
     min-width: 33%;
     overflow: hidden;
     padding: 20px;
-    box-shadow: inset -10px 10px 10px rgba(0, 0, 0, 0.3);
+    transform: skew(-10deg);
+    background: #000;
 }
 
-.text-content {
-    z-index: 2;
-    position: relative;
+.game-item .text-content {
+    transform: skew(10deg);
     padding-left: 20px;
+    z-index: 2;
+}
+
+.skew-bg-red {
+    background-color: #8b0000;
+}
+
+.skew-bg-blue {
+    background-color: #0000ff;
+}
+
+.skew-bg-orange {
+    background-color: #ff8c00;
 }
 
 .pinball-image {
@@ -48,6 +60,7 @@ body {
     max-height: 350px;
     width: auto;
     z-index: 2;
+    transform: skew(10deg);
 }
 
 .game-item h2 {
