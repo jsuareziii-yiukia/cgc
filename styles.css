@@ -31,30 +31,7 @@ body {
     min-width: 33%;
     overflow: hidden;
     padding: 20px;
-}
-
-.game-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    transform: skewY(-10deg);
-    transform-origin: 0;
-}
-
-.diagonal-bg-red::before {
-    background: #8b0000;
-}
-
-.diagonal-bg-blue::before {
-    background: #0000ff;
-}
-
-.diagonal-bg-orange::before {
-    background: #ff8c00;
+    box-shadow: inset -10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .text-content {
